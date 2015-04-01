@@ -16,7 +16,6 @@ public class TDLanguageHierarchy extends LanguageHierarchy<TDTokenId> {
             new TDTokenId("EOF", "whitespace", EOF),
             new TDTokenId("WHITESPACE", "whitespace", WHITESPACE),
             new TDTokenId("SINGLE_LINE_COMMENT", "comment", SINGLE_LINE_COMMENT),
-            new TDTokenId("FORMAL_COMMENT", "comment", FORMAL_COMMENT),
             new TDTokenId("MULTI_LINE_COMMENT", "comment", MULTI_LINE_COMMENT),
             new TDTokenId("BIT", "keyword", BIT),
             new TDTokenId("BITS", "keyword", BITS),

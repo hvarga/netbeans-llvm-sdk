@@ -13,125 +13,115 @@ public interface TableGenParserConstants {
   /** RegularExpression Id. */
   int WHITESPACE = 1;
   /** RegularExpression Id. */
-  int SINGLE_LINE_COMMENT = 4;
+  int SINGLE_LINE_COMMENT = 2;
   /** RegularExpression Id. */
-  int FORMAL_COMMENT = 5;
+  int MULTI_LINE_COMMENT = 3;
   /** RegularExpression Id. */
-  int MULTI_LINE_COMMENT = 6;
+  int BIT = 4;
   /** RegularExpression Id. */
-  int BIT = 8;
+  int BITS = 5;
   /** RegularExpression Id. */
-  int BITS = 9;
+  int CLASS = 6;
   /** RegularExpression Id. */
-  int CLASS = 10;
+  int CODE = 7;
   /** RegularExpression Id. */
-  int CODE = 11;
+  int DAG = 8;
   /** RegularExpression Id. */
-  int DAG = 12;
+  int DEF = 9;
   /** RegularExpression Id. */
-  int DEF = 13;
+  int FOREACH = 10;
   /** RegularExpression Id. */
-  int FOREACH = 14;
+  int DEFM = 11;
   /** RegularExpression Id. */
-  int DEFM = 15;
+  int FIELD = 12;
   /** RegularExpression Id. */
-  int FIELD = 16;
+  int IN = 13;
   /** RegularExpression Id. */
-  int IN = 17;
+  int INT = 14;
   /** RegularExpression Id. */
-  int INT = 18;
+  int LET = 15;
   /** RegularExpression Id. */
-  int LET = 19;
+  int LIST = 16;
   /** RegularExpression Id. */
-  int LIST = 20;
+  int MULTICLASS = 17;
   /** RegularExpression Id. */
-  int MULTICLASS = 21;
+  int STRING = 18;
   /** RegularExpression Id. */
-  int STRING = 22;
+  int INTEGER_LITERAL = 19;
   /** RegularExpression Id. */
-  int INTEGER_LITERAL = 23;
+  int DECIMAL_LITERAL = 20;
   /** RegularExpression Id. */
-  int DECIMAL_LITERAL = 24;
+  int HEX_LITERAL = 21;
   /** RegularExpression Id. */
-  int HEX_LITERAL = 25;
+  int OCTAL_LITERAL = 22;
   /** RegularExpression Id. */
-  int OCTAL_LITERAL = 26;
+  int FLOATING_POINT_LITERAL = 23;
   /** RegularExpression Id. */
-  int FLOATING_POINT_LITERAL = 27;
+  int DECIMAL_FLOATING_POINT_LITERAL = 24;
   /** RegularExpression Id. */
-  int DECIMAL_FLOATING_POINT_LITERAL = 28;
+  int DECIMAL_EXPONENT = 25;
   /** RegularExpression Id. */
-  int DECIMAL_EXPONENT = 29;
+  int HEXADECIMAL_FLOATING_POINT_LITERAL = 26;
   /** RegularExpression Id. */
-  int HEXADECIMAL_FLOATING_POINT_LITERAL = 30;
+  int HEXADECIMAL_EXPONENT = 27;
   /** RegularExpression Id. */
-  int HEXADECIMAL_EXPONENT = 31;
+  int CHARACTER_LITERAL = 28;
   /** RegularExpression Id. */
-  int CHARACTER_LITERAL = 32;
+  int STRING_LITERAL = 29;
   /** RegularExpression Id. */
-  int STRING_LITERAL = 33;
+  int IDENTIFIER = 30;
   /** RegularExpression Id. */
-  int IDENTIFIER = 34;
+  int LETTER = 31;
   /** RegularExpression Id. */
-  int LETTER = 35;
+  int PART_LETTER = 32;
   /** RegularExpression Id. */
-  int PART_LETTER = 36;
+  int LPAREN = 33;
   /** RegularExpression Id. */
-  int LPAREN = 37;
+  int RPAREN = 34;
   /** RegularExpression Id. */
-  int RPAREN = 38;
+  int LBRACE = 35;
   /** RegularExpression Id. */
-  int LBRACE = 39;
+  int RBRACE = 36;
   /** RegularExpression Id. */
-  int RBRACE = 40;
+  int LBRACKET = 37;
   /** RegularExpression Id. */
-  int LBRACKET = 41;
+  int RBRACKET = 38;
   /** RegularExpression Id. */
-  int RBRACKET = 42;
+  int SEMICOLON = 39;
   /** RegularExpression Id. */
-  int SEMICOLON = 43;
+  int COMMA = 40;
   /** RegularExpression Id. */
-  int COMMA = 44;
+  int DOT = 41;
   /** RegularExpression Id. */
-  int DOT = 45;
+  int ASSIGN = 42;
   /** RegularExpression Id. */
-  int ASSIGN = 46;
+  int LT = 43;
   /** RegularExpression Id. */
-  int LT = 47;
+  int GT = 44;
   /** RegularExpression Id. */
-  int GT = 48;
+  int BANG = 45;
   /** RegularExpression Id. */
-  int BANG = 49;
+  int HOOK = 46;
   /** RegularExpression Id. */
-  int HOOK = 50;
+  int COLON = 47;
   /** RegularExpression Id. */
-  int COLON = 51;
+  int PLUS = 48;
   /** RegularExpression Id. */
-  int PLUS = 52;
+  int MINUS = 49;
   /** RegularExpression Id. */
-  int MINUS = 53;
+  int STAR = 50;
   /** RegularExpression Id. */
-  int STAR = 54;
-  /** RegularExpression Id. */
-  int SLASH = 55;
+  int SLASH = 51;
 
   /** Lexical state. */
   int DEFAULT = 0;
-  /** Lexical state. */
-  int IN_FORMAL_COMMENT = 1;
-  /** Lexical state. */
-  int IN_MULTI_LINE_COMMENT = 2;
 
   /** Literal token values. */
   String[] tokenImage = {
     "<EOF>",
     "<WHITESPACE>",
-    "<token of kind 2>",
-    "\"/*\"",
     "<SINGLE_LINE_COMMENT>",
-    "\"*/\"",
-    "\"*/\"",
-    "<token of kind 7>",
+    "<MULTI_LINE_COMMENT>",
     "\"bit\"",
     "\"bits\"",
     "\"class\"",
