@@ -21,7 +21,7 @@
     <folder name="OptionsDialog">
         <folder name="PreviewExamples">
             <folder name="text">
-                <file name="x-td" url="TDTemplate.sj"/>
+                <file name="x-td" url="TDTemplate.td"/>
             </folder>
         </folder>
     </folder>
