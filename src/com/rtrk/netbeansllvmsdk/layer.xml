@@ -8,7 +8,7 @@
                 <folder name="FontsColors">
                     <folder name="NetBeans">
                         <folder name="Defaults">
-                            <file name="FontAndColors.xml" url="FontAndColors.xml">
+                            <file name="FontAndColors.xml" url="td/FontAndColors.xml">
                                 <attr name="SystemFileSystem.localizingBundle" stringvalue="com.rtrk.netbeansllvmsdk.Bundle"/>
                             </file>
                         </folder>
@@ -21,7 +21,7 @@
     <folder name="OptionsDialog">
         <folder name="PreviewExamples">
             <folder name="text">
-                <file name="x-td" url="TDTemplate.td"/>
+                <file name="x-td" url="td/TDTemplate.td"/>
             </folder>
         </folder>
     </folder>
