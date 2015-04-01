@@ -122,6 +122,6 @@ public class TDLanguageHierarchy extends LanguageHierarchy<TDTokenId> {
 
     @Override
     protected String mimeType() {
-        return "text/x-sj";
+        return "text/x-td";
     }
 }

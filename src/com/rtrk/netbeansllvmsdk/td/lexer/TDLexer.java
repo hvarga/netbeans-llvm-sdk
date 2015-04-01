@@ -34,5 +34,4 @@ class TDLexer implements Lexer<TDTokenId> {
     @Override
     public void release() {
     }
-
 }
