@@ -11,165 +11,109 @@ public interface TableGenParserConstants {
   /** End of File. */
   int EOF = 0;
   /** RegularExpression Id. */
-  int SINGLE_LINE_COMMENT = 8;
+  int WHITESPACE = 1;
   /** RegularExpression Id. */
-  int FORMAL_COMMENT = 9;
+  int SINGLE_LINE_COMMENT = 4;
   /** RegularExpression Id. */
-  int MULTI_LINE_COMMENT = 10;
+  int FORMAL_COMMENT = 5;
   /** RegularExpression Id. */
-  int BIT = 12;
+  int MULTI_LINE_COMMENT = 6;
   /** RegularExpression Id. */
-  int BITS = 13;
+  int BIT = 8;
   /** RegularExpression Id. */
-  int CLASS = 14;
+  int BITS = 9;
   /** RegularExpression Id. */
-  int CODE = 15;
+  int CLASS = 10;
   /** RegularExpression Id. */
-  int DAG = 16;
+  int CODE = 11;
   /** RegularExpression Id. */
-  int DEF = 17;
+  int DAG = 12;
   /** RegularExpression Id. */
-  int FOREACH = 18;
+  int DEF = 13;
   /** RegularExpression Id. */
-  int DEFM = 19;
+  int FOREACH = 14;
   /** RegularExpression Id. */
-  int FIELD = 20;
+  int DEFM = 15;
   /** RegularExpression Id. */
-  int IN = 21;
+  int FIELD = 16;
   /** RegularExpression Id. */
-  int INT = 22;
+  int IN = 17;
   /** RegularExpression Id. */
-  int LET = 23;
+  int INT = 18;
   /** RegularExpression Id. */
-  int LIST = 24;
+  int LET = 19;
   /** RegularExpression Id. */
-  int MULTICLASS = 25;
+  int LIST = 20;
   /** RegularExpression Id. */
-  int STRING = 26;
+  int MULTICLASS = 21;
   /** RegularExpression Id. */
-  int INTEGER_LITERAL = 27;
+  int STRING = 22;
   /** RegularExpression Id. */
-  int DECIMAL_LITERAL = 28;
+  int INTEGER_LITERAL = 23;
   /** RegularExpression Id. */
-  int HEX_LITERAL = 29;
+  int DECIMAL_LITERAL = 24;
   /** RegularExpression Id. */
-  int OCTAL_LITERAL = 30;
+  int HEX_LITERAL = 25;
   /** RegularExpression Id. */
-  int FLOATING_POINT_LITERAL = 31;
+  int OCTAL_LITERAL = 26;
   /** RegularExpression Id. */
-  int DECIMAL_FLOATING_POINT_LITERAL = 32;
+  int FLOATING_POINT_LITERAL = 27;
   /** RegularExpression Id. */
-  int DECIMAL_EXPONENT = 33;
+  int DECIMAL_FLOATING_POINT_LITERAL = 28;
   /** RegularExpression Id. */
-  int HEXADECIMAL_FLOATING_POINT_LITERAL = 34;
+  int DECIMAL_EXPONENT = 29;
   /** RegularExpression Id. */
-  int HEXADECIMAL_EXPONENT = 35;
+  int HEXADECIMAL_FLOATING_POINT_LITERAL = 30;
   /** RegularExpression Id. */
-  int CHARACTER_LITERAL = 36;
+  int HEXADECIMAL_EXPONENT = 31;
   /** RegularExpression Id. */
-  int STRING_LITERAL = 37;
+  int CHARACTER_LITERAL = 32;
   /** RegularExpression Id. */
-  int IDENTIFIER = 38;
+  int STRING_LITERAL = 33;
   /** RegularExpression Id. */
-  int LETTER = 39;
+  int IDENTIFIER = 34;
   /** RegularExpression Id. */
-  int PART_LETTER = 40;
+  int LETTER = 35;
   /** RegularExpression Id. */
-  int LPAREN = 41;
+  int PART_LETTER = 36;
   /** RegularExpression Id. */
-  int RPAREN = 42;
+  int LPAREN = 37;
   /** RegularExpression Id. */
-  int LBRACE = 43;
+  int RPAREN = 38;
   /** RegularExpression Id. */
-  int RBRACE = 44;
+  int LBRACE = 39;
   /** RegularExpression Id. */
-  int LBRACKET = 45;
+  int RBRACE = 40;
   /** RegularExpression Id. */
-  int RBRACKET = 46;
+  int LBRACKET = 41;
   /** RegularExpression Id. */
-  int SEMICOLON = 47;
+  int RBRACKET = 42;
   /** RegularExpression Id. */
-  int COMMA = 48;
+  int SEMICOLON = 43;
   /** RegularExpression Id. */
-  int DOT = 49;
+  int COMMA = 44;
   /** RegularExpression Id. */
-  int AT = 50;
+  int DOT = 45;
   /** RegularExpression Id. */
-  int ASSIGN = 51;
+  int ASSIGN = 46;
   /** RegularExpression Id. */
-  int LT = 52;
+  int LT = 47;
   /** RegularExpression Id. */
-  int BANG = 53;
+  int GT = 48;
   /** RegularExpression Id. */
-  int TILDE = 54;
+  int BANG = 49;
   /** RegularExpression Id. */
-  int HOOK = 55;
+  int HOOK = 50;
   /** RegularExpression Id. */
-  int COLON = 56;
+  int COLON = 51;
   /** RegularExpression Id. */
-  int EQ = 57;
+  int PLUS = 52;
   /** RegularExpression Id. */
-  int LE = 58;
+  int MINUS = 53;
   /** RegularExpression Id. */
-  int GE = 59;
+  int STAR = 54;
   /** RegularExpression Id. */
-  int NE = 60;
-  /** RegularExpression Id. */
-  int SC_OR = 61;
-  /** RegularExpression Id. */
-  int SC_AND = 62;
-  /** RegularExpression Id. */
-  int INCR = 63;
-  /** RegularExpression Id. */
-  int DECR = 64;
-  /** RegularExpression Id. */
-  int PLUS = 65;
-  /** RegularExpression Id. */
-  int MINUS = 66;
-  /** RegularExpression Id. */
-  int STAR = 67;
-  /** RegularExpression Id. */
-  int SLASH = 68;
-  /** RegularExpression Id. */
-  int BIT_AND = 69;
-  /** RegularExpression Id. */
-  int BIT_OR = 70;
-  /** RegularExpression Id. */
-  int XOR = 71;
-  /** RegularExpression Id. */
-  int REM = 72;
-  /** RegularExpression Id. */
-  int LSHIFT = 73;
-  /** RegularExpression Id. */
-  int PLUSASSIGN = 74;
-  /** RegularExpression Id. */
-  int MINUSASSIGN = 75;
-  /** RegularExpression Id. */
-  int STARASSIGN = 76;
-  /** RegularExpression Id. */
-  int SLASHASSIGN = 77;
-  /** RegularExpression Id. */
-  int ANDASSIGN = 78;
-  /** RegularExpression Id. */
-  int ORASSIGN = 79;
-  /** RegularExpression Id. */
-  int XORASSIGN = 80;
-  /** RegularExpression Id. */
-  int REMASSIGN = 81;
-  /** RegularExpression Id. */
-  int LSHIFTASSIGN = 82;
-  /** RegularExpression Id. */
-  int RSIGNEDSHIFTASSIGN = 83;
-  /** RegularExpression Id. */
-  int RUNSIGNEDSHIFTASSIGN = 84;
-  /** RegularExpression Id. */
-  int ELLIPSIS = 85;
-  /** RegularExpression Id. */
-  int RUNSIGNEDSHIFT = 86;
-  /** RegularExpression Id. */
-  int RSIGNEDSHIFT = 87;
-  /** RegularExpression Id. */
-  int GT = 88;
+  int SLASH = 55;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -181,17 +125,13 @@ public interface TableGenParserConstants {
   /** Literal token values. */
   String[] tokenImage = {
     "<EOF>",
-    "\" \"",
-    "\"\\t\"",
-    "\"\\n\"",
-    "\"\\r\"",
-    "\"\\f\"",
-    "<token of kind 6>",
+    "<WHITESPACE>",
+    "<token of kind 2>",
     "\"/*\"",
     "<SINGLE_LINE_COMMENT>",
     "\"*/\"",
     "\"*/\"",
-    "<token of kind 11>",
+    "<token of kind 7>",
     "\"bit\"",
     "\"bits\"",
     "\"class\"",
@@ -230,45 +170,16 @@ public interface TableGenParserConstants {
     "\";\"",
     "\",\"",
     "\".\"",
-    "\"@\"",
     "\"=\"",
     "\"<\"",
+    "\">\"",
     "\"!\"",
-    "\"~\"",
     "\"?\"",
     "\":\"",
-    "\"==\"",
-    "\"<=\"",
-    "\">=\"",
-    "\"!=\"",
-    "\"||\"",
-    "\"&&\"",
-    "\"++\"",
-    "\"--\"",
     "\"+\"",
     "\"-\"",
     "\"*\"",
     "\"/\"",
-    "\"&\"",
-    "\"|\"",
-    "\"^\"",
-    "\"%\"",
-    "\"<<\"",
-    "\"+=\"",
-    "\"-=\"",
-    "\"*=\"",
-    "\"/=\"",
-    "\"&=\"",
-    "\"|=\"",
-    "\"^=\"",
-    "\"%=\"",
-    "\"<<=\"",
-    "\">>=\"",
-    "\">>>=\"",
-    "\"...\"",
-    "\">>>\"",
-    "\">>\"",
-    "\">\"",
   };
 
 }

@@ -23,13 +23,14 @@ PARSER_END(TableGenParser)
 
 /* WHITE SPACE */
 
-SKIP :
+TOKEN :
 {
+  < WHITESPACE:
   " "
 | "\t"
 | "\n"
 | "\r"
-| "\f"
+| "\f">
 }
 
 /* COMMENTS */
@@ -41,19 +42,19 @@ MORE :
   "/*" : IN_MULTI_LINE_COMMENT
 }
 
-SPECIAL_TOKEN :
+TOKEN :
 {
-  <SINGLE_LINE_COMMENT: "//" (~["\n", "\r"])* ("\n" | "\r" | "\r\n")?>
+  <SINGLE_LINE_COMMENT: "//" (~["\n","\r"])* ("\n" | "\r" | "\r\n")?>
 }
 
 <IN_FORMAL_COMMENT>
-SPECIAL_TOKEN :
+TOKEN :
 {
   <FORMAL_COMMENT: "*/" > : DEFAULT
 }
 
 <IN_MULTI_LINE_COMMENT>
-SPECIAL_TOKEN :
+TOKEN :
 {
   <MULTI_LINE_COMMENT: "*/" > : DEFAULT
 }
@@ -812,7 +813,6 @@ TOKEN :
 | < SEMICOLON: ";" >
 | < COMMA: "," >
 | < DOT: "." >
-| < AT: "@" >
 }
 
 /* OPERATORS */
@@ -821,57 +821,12 @@ TOKEN :
 {
   < ASSIGN: "=" >
 | < LT: "<" >
+| < GT: ">" >
 | < BANG: "!" >
-| < TILDE: "~" >
 | < HOOK: "?" >
 | < COLON: ":" >
-| < EQ: "==" >
-| < LE: "<=" >
-| < GE: ">=" >
-| < NE: "!=" >
-| < SC_OR: "||" >
-| < SC_AND: "&&" >
-| < INCR: "++" >
-| < DECR: "--" >
 | < PLUS: "+" >
 | < MINUS: "-" >
 | < STAR: "*" >
 | < SLASH: "/" >
-| < BIT_AND: "&" >
-| < BIT_OR: "|" >
-| < XOR: "^" >
-| < REM: "%" >
-| < LSHIFT: "<<" >
-| < PLUSASSIGN: "+=" >
-| < MINUSASSIGN: "-=" >
-| < STARASSIGN: "*=" >
-| < SLASHASSIGN: "/=" >
-| < ANDASSIGN: "&=" >
-| < ORASSIGN: "|=" >
-| < XORASSIGN: "^=" >
-| < REMASSIGN: "%=" >
-| < LSHIFTASSIGN: "<<=" >
-| < RSIGNEDSHIFTASSIGN: ">>=" >
-| < RUNSIGNEDSHIFTASSIGN: ">>>=" >
-| < ELLIPSIS: "..." >
-}
-
-/* >'s need special attention due to generics syntax. */
-TOKEN :
-{
-  < RUNSIGNEDSHIFT: ">>>" >
-  {
-     matchedToken.kind = GT;
-     ((MyToken)matchedToken).realKind = RUNSIGNEDSHIFT;
-     input_stream.backup(2);
-     matchedToken.image = ">";
-  }
-| < RSIGNEDSHIFT: ">>" >
-  {
-     matchedToken.kind = GT;
-     ((MyToken)matchedToken).realKind = RSIGNEDSHIFT;
-     input_stream.backup(1);
-     matchedToken.image = ">";
-  }
-| < GT: ">" >
 }
