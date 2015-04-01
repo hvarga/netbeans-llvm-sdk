@@ -1,6 +1,7 @@
 Manifest-Version: 1.0
 AutoUpdate-Show-In-Client: true
 OpenIDE-Module: com.rtrk.netbeansllvmsdk
+OpenIDE-Module-Layer: com/rtrk/netbeansllvmsdk/layer.xml
 OpenIDE-Module-Localizing-Bundle: com/rtrk/netbeansllvmsdk/Bundle.properties
 OpenIDE-Module-Specification-Version: 1.0
 
