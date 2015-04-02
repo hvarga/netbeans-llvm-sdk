@@ -32,6 +32,7 @@ public class TDLanguageHierarchy extends LanguageHierarchy<TDTokenId> {
             new TDTokenId("LIST", "keyword", LIST),
             new TDTokenId("MULTICLASS", "keyword", MULTICLASS),
             new TDTokenId("STRING", "keyword", STRING),
+            new TDTokenId("INCLUDE", "keyword", INCLUDE),
             new TDTokenId("INTEGER_LITERAL", "literal", INTEGER_LITERAL),
             new TDTokenId("DECIMAL_LITERAL", "literal", DECIMAL_LITERAL),
             new TDTokenId("HEX_LITERAL", "literal", HEX_LITERAL),
@@ -71,6 +72,7 @@ public class TDLanguageHierarchy extends LanguageHierarchy<TDTokenId> {
             new TDTokenId("SC_OR", "operator", SC_OR),
             new TDTokenId("SC_AND", "operator", SC_AND),
             new TDTokenId("REM", "operator", REM),
+            new TDTokenId("HASH", "operator", HASH)
         });
         idToToken = new HashMap<Integer, TDTokenId>();
         for (TDTokenId token : tokens) {

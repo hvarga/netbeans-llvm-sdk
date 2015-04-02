@@ -64,6 +64,7 @@ TOKEN :
 | < LIST: "list" >
 | < MULTICLASS: "multiclass" >
 | < STRING: "string" >
+| < INCLUDE: "include" >
 }
 
 /* LITERALS */
@@ -793,6 +794,7 @@ TOKEN :
 | < SEMICOLON: ";" >
 | < COMMA: "," >
 | < DOT: "." >
+| < HASH: "#" >
 }
 
 /* OPERATORS */
