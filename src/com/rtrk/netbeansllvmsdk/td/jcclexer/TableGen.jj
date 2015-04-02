@@ -800,6 +800,11 @@ TOKEN :
 TOKEN :
 {
   < ASSIGN: "=" >
+| < EQ: "==" >
+| < LE: "<=" >
+| < GE: ">=" >
+| < SC_OR: "||" >
+| < SC_AND: "&&" >
 | < LT: "<" >
 | < GT: ">" >
 | < BANG: "!" >
@@ -809,4 +814,5 @@ TOKEN :
 | < MINUS: "-" >
 | < STAR: "*" >
 | < SLASH: "/" >
+| < REM: "%" >
 }

@@ -95,23 +95,35 @@ public interface TableGenParserConstants {
   /** RegularExpression Id. */
   int ASSIGN = 42;
   /** RegularExpression Id. */
-  int LT = 43;
+  int EQ = 43;
   /** RegularExpression Id. */
-  int GT = 44;
+  int LE = 44;
   /** RegularExpression Id. */
-  int BANG = 45;
+  int GE = 45;
   /** RegularExpression Id. */
-  int HOOK = 46;
+  int SC_OR = 46;
   /** RegularExpression Id. */
-  int COLON = 47;
+  int SC_AND = 47;
   /** RegularExpression Id. */
-  int PLUS = 48;
+  int LT = 48;
   /** RegularExpression Id. */
-  int MINUS = 49;
+  int GT = 49;
   /** RegularExpression Id. */
-  int STAR = 50;
+  int BANG = 50;
   /** RegularExpression Id. */
-  int SLASH = 51;
+  int HOOK = 51;
+  /** RegularExpression Id. */
+  int COLON = 52;
+  /** RegularExpression Id. */
+  int PLUS = 53;
+  /** RegularExpression Id. */
+  int MINUS = 54;
+  /** RegularExpression Id. */
+  int STAR = 55;
+  /** RegularExpression Id. */
+  int SLASH = 56;
+  /** RegularExpression Id. */
+  int REM = 57;
 
   /** Lexical state. */
   int DEFAULT = 0;
@@ -161,6 +173,11 @@ public interface TableGenParserConstants {
     "\",\"",
     "\".\"",
     "\"=\"",
+    "\"==\"",
+    "\"<=\"",
+    "\">=\"",
+    "\"||\"",
+    "\"&&\"",
     "\"<\"",
     "\">\"",
     "\"!\"",
@@ -170,6 +187,7 @@ public interface TableGenParserConstants {
     "\"-\"",
     "\"*\"",
     "\"/\"",
+    "\"%\"",
   };
 
 }
